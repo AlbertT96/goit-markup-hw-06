@@ -448,28 +448,28 @@
 
                             <ul class="list icon_list">
                                 <li class="svg_list_i">
-                                    <a class="svg_link_i" href="#">
+                                    <a class="svg_link_i_f" href="#">
                                         <svg width="20px" height="20px">
                                             <use href="./images/symbole_ourteam_social.svg#icon-instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="svg_list_i">
-                                    <a class="svg_link_i" href="#">
+                                    <a class="svg_link_i_f" href="#">
                                         <svg width="20" height="20">
                                             <use href="./images/symbole_ourteam_social.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="svg_list_i">
-                                    <a class="svg_link_i" href="#">
+                                    <a class="svg_link_i_f" href="#">
                                         <svg width="20" height="20">
                                             <use href="./images/symbole_ourteam_social.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="svg_list_i">
-                                    <a class="svg_link_i" href="#">
+                                    <a class="svg_link_i_f" href="#">
                                         <svg width="20" height="20">
                                             <use href="./images/symbole_ourteam_social.svg#icon-linkedin"></use>
                                         </svg>
@@ -478,6 +478,32 @@
                             </ul>
                         </div>
                     </li>
+                
+                <li>
+<div class="newsleter">
+
+    <form class="join-us">
+        <label for="email">
+            <h2 class="join-us email-words potrzeba_białego_tekstu">Zapisz się do newslettera</h2>
+        </label>
+
+        <div class="in-line">
+            <input type="text" id="email" name="email" placeholder="E-mail" class="disp">
+        
+        <button type="submit" class="save-btn">
+            <div class="svg-wrapper">
+                <span>Zapisz się</span>
+                <svg class="svg-save">
+                    <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+            </div>
+        </button>
+    </div>
+
+    </form>
+
+</div>
+                </li>
                 </ul>
 
             </address>
@@ -492,18 +518,50 @@
                 </svg>
             </button>
 
-            <h2 class="modal-form-title">Zostaw swoje dane w formularzu poniżej</h2>
-            <label for="name" class="modal-label">Imię</label>
-            <input type="text" name="imie" class="modal-input" required>
-            <label for="telefon" class="modal-label">Telefon</label>
-            <input type="tel" name="telefon" class="modal-input" required>
-            <label for="komentarz" class="modal-label">Komentarz</label>
-            <textarea name="komentarz" id="textarea" cols="30" rows="10"></textarea>
-            <input type="checkbox" class="modal-input" required>
-            <label for="checkbox" class="politicy-label">Oświadczam iż akceptuję <a href="#"
-                    class="modal-politicy-link">Regulamin</a> i <a href="#" class="modal-politicy-link">Politykę
-                    prywatności</a>.</label>
-            <button class="modal-btn" type="submit">Wyślij</button>
+
+
+            <h2 class="modal-title">Zostaw swoje dane w formularzu poniżej</h2>
+            
+            <form name="new-data" class="user-form transition-bg-color-delay">
+            
+                <label for="user-name">Imie</label>
+                <div class="modal-input-wrapper">
+                    <input type="text" name="name" id="user-name">
+                    <svg class="modal-form-svg transition-bg-color-delay">
+                        <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+                    </svg>
+                </div>
+            
+            
+                <label for="user-phone">Telefon</label>
+                <div class="modal-input-wrapper">
+                    <input type="text" name="phone" id="user-phone">
+                    <svg class="modal-form-svg transition-bg-color-delay">
+                        <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+                    </svg>
+                </div>
+            
+            
+                <label for="user-mail">Email</label>
+                <div class="modal-input-wrapper">
+                    <input type="text" name="mail" id="user-mail">
+                    <svg class="modal-form-svg transition-bg-color-delay">
+                        <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+                    </svg>
+                </div>
+            
+                <label for="user-coment">Komentarz</label>
+            
+                <textarea name="coment" id="user-coment" placeholder="Wprowadź tekst" class="transition-bg-color-delay"></textarea>
+
+
+
+            <div class="chceckbox-wrapper">
+                <input type="checkbox" name="accept" id="check-conditions" class="input-check-conditions visually-hidden">
+                <label for="check-conditions" class="chbox-conditions">Oświadczam iż akceptuję <a
+                        href="#"><span>Regulamin</span></a> i <a href="#"><span>Politykę Prywatności.</span></a> </label>
+            </div>
+            <button type="submit" class="user-btn">Wyślij</button>
 
         </div>
 
